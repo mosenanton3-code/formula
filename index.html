@@ -285,7 +285,7 @@ footer{background:var(--ink);color:var(--paper);border-radius:clamp(32px,5vw,64p
 .fr nav{display:flex;flex-wrap:wrap;gap:4px 22px}
 .fr nav a{text-decoration:none;min-height:44px;display:inline-flex;align-items:center;color:var(--paper)}
 .fr nav a:hover{color:var(--orange)}
-.giant{font-family:var(--display);font-weight:900;font-variation-settings:"wdth" 125,"wght" 900;font-size:clamp(3rem,18vw,22rem);line-height:.78;letter-spacing:-.04em;color:transparent;-webkit-text-stroke:2px #3a3a3a;margin-top:clamp(40px,6vw,80px);white-space:nowrap;text-align:center;transform:translateY(12%)}
+.giant{font-family:var(--display);font-weight:900;font-variation-settings:"wdth" 125,"wght" 900;font-size:clamp(3rem,14.5vw,22rem);line-height:.78;letter-spacing:-.04em;color:transparent;-webkit-text-stroke:2px #3a3a3a;margin-top:clamp(40px,6vw,80px);white-space:nowrap;text-align:center;transform:translateY(12%)}
 .fb{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:.85rem;color:#8d877d;padding-block:18px;border-top:1px solid #2a2a2a;position:relative;background:var(--ink)}
 
 /* cursor (fine pointers only) */
@@ -646,6 +646,11 @@ footer{background:var(--ink);color:var(--paper);border-radius:clamp(32px,5vw,64p
   document.getElementById('shake').addEventListener('click', () => { start(); if (!engine) return; bodies.forEach(b => { Matter.Body.setVelocity(b, { x: (Math.random() - .5) * 20, y: -12 - Math.random() * 14 }); Matter.Body.setAngularVelocity(b, (Math.random() - .5) * .5); }); });
   let rt; addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(() => { if (started && Math.abs(pit.getBoundingClientRect().width - W) > 40) { build(); } }, 300); });
 
+
+  /* ---------- footer wordmark: always fit FORMULA to the width ---------- */
+  const giant = document.querySelector('.giant');
+  const fitGiant = () => { if (!giant) return; giant.style.fontSize = ''; const r = document.createRange(); r.selectNodeContents(giant); const tw = r.getBoundingClientRect().width, bw = giant.getBoundingClientRect().width - 32; if (tw > 0) giant.style.fontSize = (parseFloat(getComputedStyle(giant).fontSize) * Math.min(bw / tw, 1.6)).toFixed(1) + 'px'; };
+  fitGiant(); document.fonts && document.fonts.ready.then(fitGiant); addEventListener('resize', fitGiant);
   /* ---------- lead form ---------- */
   const form = document.getElementById('leadForm'), st = document.getElementById('status'), send = document.getElementById('send');
   const show = (m, ok) => { st.hidden = false; st.className = 'status ' + (ok ? 'ok' : 'err'); st.textContent = m; };
