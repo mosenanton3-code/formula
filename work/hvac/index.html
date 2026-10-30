@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ironpeak Heating &amp; Air | Furnace &amp; AC Repair (Concept by Formula)</title>
+<meta name="description" content="Ironpeak Heating & Air is a concept website by Formula for a heating and air conditioning contractor: fast service requests, clear services and maintenance plans.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0f1a24">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f1a24'/%3E%3Cpath d='M12 46 28 18l8 14 6-8 10 22z' fill='%23ff6a2b'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;800;900&display=swap">
+<style>
+/* Concept: dependable and urgent. Deep navy, safety orange, heavy condensed caps, utilitarian cards. */
+:root{--bg:#0f1a24;--bg2:#152230;--card:#182736;--line:#2a3c4e;--fg:#f3f6f9;--muted:#a9b8c6;--or:#ff6a2b;--or2:#ff8a55;--paper:#f4f6f8;--ink:#0f1a24;
+  --f:"Archivo","Arial Narrow",Arial,sans-serif;--gl:max(18px,env(safe-area-inset-left,0px));--gr:max(18px,env(safe-area-inset-right,0px))}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--f);font-size:1.0625rem;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+h1,h2,h3{margin:0;line-height:.95;letter-spacing:-.02em;text-wrap:balance}
+p{margin:0}
+:focus-visible{outline:3px solid var(--or);outline-offset:3px}
+.wrap{max-width:1240px;margin:0 auto;padding-left:var(--gl);padding-right:var(--gr)}
+.concept{background:var(--or);color:var(--ink);text-align:center;font-weight:600;font-size:.85rem;padding:8px 16px}
+.concept a{font-weight:800}
+.eyebrow{font-weight:800;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--or)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 26px;font:800 1rem var(--f);text-transform:uppercase;letter-spacing:.04em;text-decoration:none;border:2px solid var(--or);cursor:pointer;transition:background-color .2s,color .2s,transform .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-or{background:var(--or);color:var(--ink)}
+.btn-or:hover{background:var(--or2);border-color:var(--or2)}
+.btn-ghost{background:transparent;color:var(--fg);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--fg)}
+header{position:sticky;top:0;z-index:20;background:rgba(15,26,36,.94);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:76px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:900;font-size:1.35rem;letter-spacing:-.02em;text-transform:uppercase}
+.logo b{color:var(--or)}
+.logo svg{width:36px;height:36px}
+.links{display:flex;gap:28px;list-style:none;margin:0;padding:0}
+.links a{text-decoration:none;color:var(--muted);font-weight:600;padding:12px 0}
+.links a:hover{color:var(--fg)}
+.menu-btn{display:none;width:48px;height:48px;border:1px solid var(--line);background:var(--card);cursor:pointer;align-items:center;justify-content:center}
+.menu-btn span,.menu-btn span::before,.menu-btn span::after{display:block;width:20px;height:2px;background:var(--fg);position:relative}
+.menu-btn span::before,.menu-btn span::after{content:"";position:absolute;left:0}
+.menu-btn span::before{top:-6px}.menu-btn span::after{top:6px}
+@media (max-width:920px){.links{display:none}.menu-btn{display:flex}.nav .btn{display:none}
+  .links.open{display:flex;flex-direction:column;gap:0;position:absolute;left:0;right:0;top:100%;background:var(--bg);border-bottom:1px solid var(--line);padding:8px var(--gr) 16px var(--gl)}
+  .links.open a{display:block;padding:14px 0;border-bottom:1px solid var(--line)}}
+.alert{background:var(--bg2);border-bottom:1px solid var(--line)}
+.alert .wrap{display:flex;align-items:center;justify-content:center;gap:12px;min-height:46px;font-weight:600;font-size:.95rem;text-align:center;flex-wrap:wrap}
+.alert i{width:10px;height:10px;border-radius:50%;background:var(--or);animation:pulse 1.6s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(255,106,43,.6)}100%{box-shadow:0 0 0 12px rgba(255,106,43,0)}}
+.hero{padding-block:clamp(40px,7vw,90px)}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:clamp(30px,5vw,60px);align-items:center}
+.hero h1{font-size:clamp(3rem,1.5rem + 6vw,6.8rem);font-weight:900;text-transform:uppercase;margin:16px 0 22px}
+.hero h1 span{color:var(--or)}
+.hero p.lede{font-size:clamp(1.1rem,1rem + .4vw,1.3rem);color:var(--muted);max-width:32em}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.trust{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:34px;color:var(--muted);font-weight:600}
+.trust span{display:inline-flex;align-items:center;gap:8px}
+.trust span::before{content:"";width:8px;height:8px;background:var(--or)}
+.quick{background:var(--card);border:1px solid var(--line);padding:clamp(22px,3vw,32px);display:grid;gap:14px}
+.quick h2{font-size:1.5rem;text-transform:uppercase;font-weight:900}
+.quick p.sub{color:var(--muted);font-size:.95rem;margin-top:-6px}
+.f{display:grid;gap:6px}
+label,legend{font-weight:600;font-size:.88rem;color:var(--muted)}
+input,select,textarea{width:100%;min-height:52px;background:var(--bg);border:1.5px solid var(--line);color:var(--fg);font:inherit;padding:12px 14px}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--or)}
+.msg{padding:12px 14px;font-weight:600}
+.msg.ok{background:rgba(255,106,43,.15);border:1px solid var(--or)}.msg.err{background:#3a1d14;border:1px solid #ff8a55}
+@media (max-width:900px){.hero-grid{grid-template-columns:1fr}}
+.stripe{background:repeating-linear-gradient(-45deg,var(--bg2) 0 26px,var(--bg) 26px 52px);border-block:1px solid var(--line);overflow:hidden}
+.stripe .row{display:flex;gap:56px;white-space:nowrap;width:max-content;animation:mq 30s linear infinite;padding-block:22px;font-weight:900;font-size:clamp(1.2rem,1rem + 1vw,1.8rem);text-transform:uppercase;color:#6c8093}
+.stripe .row b{color:var(--or)}
+@keyframes mq{to{transform:translateX(-50%)}}
+section{scroll-margin-top:90px}
+.sec{padding-block:clamp(70px,9vw,120px)}
+.head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:44px}
+.head h2{font-size:clamp(2.4rem,1.4rem + 3.6vw,4.6rem);font-weight:900;text-transform:uppercase;margin-top:12px;max-width:14ch}
+.head p{color:var(--muted);max-width:34em}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2px;background:var(--line);border:1px solid var(--line)}
+.svc{background:var(--bg);padding:32px;display:flex;flex-direction:column;gap:14px;min-height:280px;position:relative;transition:background-color .25s}
+.svc:hover{background:var(--card)}
+.svc .num{position:absolute;right:26px;top:24px;font-weight:900;font-size:.85rem;color:#4b5f72}
+.svc .ic{width:58px;height:58px;background:var(--or);display:grid;place-items:center;color:var(--ink)}
+.svc .ic svg{width:30px;height:30px}
+.svc h3{font-size:1.7rem;text-transform:uppercase;font-weight:900}
+.svc p{color:var(--muted)}
+.svc a{margin-top:auto;font-weight:800;text-transform:uppercase;font-size:.9rem;color:var(--or);text-decoration:none;letter-spacing:.04em}
+@media (max-width:900px){.grid3{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:580px){.grid3{grid-template-columns:1fr}}
+.light{background:var(--paper);color:var(--ink)}
+.light .head p,.light .muted{color:#4a5a69}
+.plans{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.plan{background:#fff;border:2px solid #dde3e9;padding:30px;display:flex;flex-direction:column;gap:14px}
+.plan.pop{border-color:var(--ink);box-shadow:10px 10px 0 var(--or)}
+.plan h3{font-size:1.8rem;text-transform:uppercase;font-weight:900}
+.plan .tagline{color:#4a5a69}
+.plan ul{list-style:none;padding:0;margin:6px 0 10px;display:grid;gap:10px}
+.plan li{display:flex;gap:10px;font-weight:600}
+.plan li::before{content:"✓";color:var(--or);font-weight:900}
+.plan .btn{margin-top:auto;color:var(--ink)}
+.plan .pill{align-self:flex-start;background:var(--ink);color:#fff;font-weight:800;font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;padding:6px 10px}
+@media (max-width:900px){.plans{grid-template-columns:1fr}}
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;list-style:none;padding:0;margin:0;counter-reset:s}
+.steps li{border-top:4px solid var(--or);padding-top:22px}
+.steps li::before{counter-increment:s;content:"0" counter(s);display:block;font-weight:900;font-size:2.4rem;color:#4b5f72;line-height:1;margin-bottom:12px}
+.steps h3{font-size:1.4rem;text-transform:uppercase;font-weight:900;margin-bottom:8px}
+.steps p{color:var(--muted)}
+@media (max-width:900px){.steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.steps{grid-template-columns:1fr}}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{cursor:pointer;list-style:none;padding:22px 0;font-weight:800;font-size:1.15rem;display:flex;justify-content:space-between;gap:16px}
+.faq summary::after{content:"+";color:var(--or);font-size:1.6rem;line-height:1}
+.faq details[open] summary::after{content:"–"}
+.faq details p{color:var(--muted);padding-bottom:22px;max-width:60em}
+.cta{background:var(--or);color:var(--ink)}
+.cta .wrap{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;padding-block:clamp(50px,7vw,80px)}
+.cta h2{font-size:clamp(2.4rem,1.4rem + 4vw,5rem);font-weight:900;text-transform:uppercase}
+.cta .btn{background:var(--ink);color:#fff;border-color:var(--ink)}
+footer{padding-block:50px 30px;color:var(--muted)}
+.fgrid{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}
+footer nav{display:flex;flex-wrap:wrap;gap:4px 22px}
+footer nav a{text-decoration:none;min-height:44px;display:inline-flex;align-items:center}
+footer nav a:hover{color:var(--fg)}
+.fbase{margin-top:30px;padding-top:20px;border-top:1px solid var(--line);font-size:.88rem;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.fbase a{color:var(--fg)}
+.mob-cta{display:none}
+@media (max-width:700px){.mob-cta{display:flex;position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:30}body{padding-bottom:82px}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="concept">Concept website designed by <a href="../../">Formula</a>. Ironpeak Heating &amp; Air is a fictional company.</div>
+<header id="top">
+  <div class="wrap nav">
+    <a class="logo" href="#top" aria-label="Ironpeak Heating and Air home"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="10" fill="#182736"/><path d="M12 46 28 18l8 14 6-8 10 22z" fill="#ff6a2b"/></svg>Iron<b>peak</b></a>
+    <nav aria-label="Main"><ul class="links" id="links"><li><a href="#services">Services</a></li><li><a href="#plans">Maintenance</a></li><li><a href="#how">How it works</a></li><li><a href="#faq">FAQ</a></li></ul></nav>
+    <a class="btn btn-or" href="#request">Schedule Service</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="links"><span></span></button>
+  </div>
+</header>
+<div class="alert"><div class="wrap"><i aria-hidden="true"></i>No heat or no AC? Same-day service requests answered fast.</div></div>
+
+<main>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Heating · Cooling · Air quality</span>
+        <h1>No heat? <span>We're on the way.</span></h1>
+        <p class="lede">Furnace, AC and heat pump repair with upfront estimates and technicians who arrive in the window we promise.</p>
+        <div class="ctas"><a class="btn btn-or" href="#request">Request Service</a><a class="btn btn-ghost" href="#plans">See Maintenance Plans</a></div>
+        <div class="trust"><span>Licensed &amp; insured technicians</span><span>Upfront pricing</span><span>All major brands</span></div>
+      </div>
+      <form class="quick" id="request" novalidate>
+        <span class="eyebrow">Book in 60 seconds</span>
+        <h2>Request service</h2>
+        <p class="sub">Tell us what's going on and we'll confirm a time window.</p>
+        <div class="f"><label for="q-type">Service needed</label><select id="q-type" name="type"><option>AC repair</option><option>Furnace repair</option><option>Heat pump service</option><option>New system estimate</option><option>Tune-up</option></select></div>
+        <div class="f"><label for="q-name">Name</label><input id="q-name" name="name" autocomplete="name" required></div>
+        <div class="f"><label for="q-zip">ZIP code</label><input id="q-zip" name="zip" inputmode="numeric" autocomplete="postal-code" maxlength="5" required></div>
+        <div class="f"><label for="q-time">Preferred time</label><select id="q-time" name="time"><option>As soon as possible</option><option>Morning (8–12)</option><option>Afternoon (12–4)</option><option>Evening (4–7)</option></select></div>
+        <div class="msg" id="msg" role="status" aria-live="polite" hidden></div>
+        <button class="btn btn-or" type="submit">Check Availability</button>
+      </form>
+    </div>
+  </section>
+
+  <div class="stripe" aria-hidden="true"><div class="row"><span>Furnaces</span><b>●</b><span>Air conditioning</span><b>●</b><span>Heat pumps</span><b>●</b><span>Ductless mini-splits</span><b>●</b><span>Indoor air quality</span><b>●</b><span>Thermostats</span><b>●</b><span>Furnaces</span><b>●</b><span>Air conditioning</span><b>●</b><span>Heat pumps</span><b>●</b><span>Ductless mini-splits</span><b>●</b><span>Indoor air quality</span><b>●</b><span>Thermostats</span><b>●</b></div></div>
+
+  <section class="sec" id="services">
+    <div class="wrap">
+      <div class="head"><div><span class="eyebrow">Services</span><h2>Comfort, fixed right the first time.</h2></div><p>Every visit starts with a clear diagnosis and a written estimate. You approve the work before we begin.</p></div>
+      <div class="grid3">
+        <article class="svc"><span class="num">01</span><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M4.9 4.9l14.2 14.2M2 12h20M4.9 19.1 19.1 4.9"/></svg></div><h3>AC repair</h3><p>Warm air, strange noises or a unit that won't start. We diagnose and fix all major brands.</p><a href="#request">Request repair →</a></article>
+        <article class="svc"><span class="num">02</span><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c4 0 7-3 7-7 0-5-5-7-5-12-3 2-4 5-4 7-1-1-2-2-2-4-2 2-3 5-3 9 0 4 3 7 7 7z"/></svg></div><h3>Furnace repair</h3><p>No heat, short cycling or a pilot that keeps going out, handled safely and quickly.</p><a href="#request">Request repair →</a></article>
+        <article class="svc"><span class="num">03</span><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="6" width="18" height="12" rx="1"/><path d="M7 10h10M7 14h6"/></svg></div><h3>New systems</h3><p>Right-sized, efficient systems with clean installs and options that fit your budget.</p><a href="#request">Get an estimate →</a></article>
+        <article class="svc"><span class="num">04</span><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></div><h3>Heat pumps</h3><p>Year-round heating and cooling from one efficient system, installed and serviced.</p><a href="#request">Learn more →</a></article>
+        <article class="svc"><span class="num">05</span><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h12a3 3 0 1 0-3-3M3 12h16a3 3 0 1 1-3 3M3 16h8"/></svg></div><h3>Air quality</h3><p>Filtration, humidifiers and duct cleaning for cleaner, healthier air at home.</p><a href="#request">Breathe easier →</a></article>
+        <article class="svc"><span class="num">06</span><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h3>Tune-ups</h3><p>Seasonal inspections that catch small problems before they become breakdowns.</p><a href="#plans">See plans →</a></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec light" id="plans">
+    <div class="wrap">
+      <div class="head"><div><span class="eyebrow">Maintenance plans</span><h2 style="color:var(--ink)">Stay ahead of breakdowns.</h2></div><p>Choose the level of care that fits your home. Every plan includes priority scheduling.</p></div>
+      <div class="plans">
+        <article class="plan"><h3>Basic</h3><p class="tagline">One system, once a year.</p><ul><li>Annual tune-up</li><li>Priority scheduling</li><li>Filter check</li></ul><a class="btn btn-or" href="#request">Ask about Basic</a></article>
+        <article class="plan pop"><span class="pill">Most popular</span><h3>Comfort</h3><p class="tagline">Heating and cooling, twice a year.</p><ul><li>Spring AC + fall furnace tune-ups</li><li>Priority scheduling</li><li>Discount on repairs</li><li>No overtime fees</li></ul><a class="btn btn-or" href="#request">Ask about Comfort</a></article>
+        <article class="plan"><h3>Total</h3><p class="tagline">Every system, fully covered.</p><ul><li>All Comfort benefits</li><li>Air quality check</li><li>Thermostat optimization</li><li>Multiple systems</li></ul><a class="btn btn-or" href="#request">Ask about Total</a></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="how">
+    <div class="wrap">
+      <div class="head"><div><span class="eyebrow">How it works</span><h2>Four steps to comfort.</h2></div></div>
+      <ol class="steps">
+        <li><h3>Request</h3><p>Book online in a minute or two and choose a time window.</p></li>
+        <li><h3>Confirm</h3><p>We text you a confirmed window and your technician's name.</p></li>
+        <li><h3>Diagnose</h3><p>A clear diagnosis and a written estimate before any work starts.</p></li>
+        <li><h3>Fix</h3><p>Repair done right, area cleaned up, and you're comfortable again.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="sec faq" id="faq" style="padding-top:0">
+    <div class="wrap" style="max-width:900px">
+      <div class="head"><div><span class="eyebrow">FAQ</span><h2>Common questions.</h2></div></div>
+      <details><summary>Do you offer same-day service?</summary><p>We keep time open every day for urgent no-heat and no-AC calls. Request service and we'll confirm the earliest window.</p></details>
+      <details><summary>Will I know the price before work starts?</summary><p>Yes. Your technician gives you a written estimate after diagnosing the problem, and nothing starts until you approve it.</p></details>
+      <details><summary>Which brands do you service?</summary><p>All major furnace, air conditioner and heat pump brands.</p></details>
+      <details><summary>Should I repair or replace my system?</summary><p>We'll lay out both options with honest pros and cons, based on your system's age, condition and efficiency.</p></details>
+    </div>
+  </section>
+
+  <section class="cta"><div class="wrap"><h2>Comfort can't wait.</h2><a class="btn" href="#request">Schedule Service</a></div></section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div><a class="logo" href="#top"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="10" fill="#182736"/><path d="M12 46 28 18l8 14 6-8 10 22z" fill="#ff6a2b"/></svg>Iron<b>peak</b></a><p style="margin-top:12px;max-width:30ch">Heating, cooling and air quality for homes that need to stay comfortable.</p></div>
+      <nav aria-label="Footer"><a href="#services">Services</a><a href="#plans">Maintenance</a><a href="#how">How it works</a><a href="#faq">FAQ</a><a href="#request">Request service</a></nav>
+    </div>
+    <div class="fbase"><span>Concept website by <a href="../../">Formula</a>. Fictional business for portfolio purposes.</span><span>© 2026</span></div>
+  </div>
+</footer>
+<a class="btn btn-or mob-cta" href="#request">Request Service</a>
+
+<script>
+(() => {
+  const btn = document.getElementById('menuBtn'), links = document.getElementById('links');
+  btn.addEventListener('click', () => { const o = links.classList.toggle('open'); btn.setAttribute('aria-expanded', o); btn.setAttribute('aria-label', o ? 'Close menu' : 'Open menu'); });
+  links.addEventListener('click', e => { if (e.target.closest('a')) { links.classList.remove('open'); btn.setAttribute('aria-expanded', false); } });
+  const form = document.getElementById('request'), msg = document.getElementById('msg');
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    const n = form.elements.name.value.trim(), z = form.elements.zip.value.trim();
+    msg.hidden = false;
+    if (!n) { msg.className = 'msg err'; msg.textContent = 'Please add your name.'; form.elements.name.focus(); return; }
+    if (!/^\d{5}$/.test(z)) { msg.className = 'msg err'; msg.textContent = 'Please enter a 5-digit ZIP code.'; form.elements.zip.focus(); return; }
+    msg.className = 'msg ok'; msg.textContent = `Thanks, ${n.split(' ')[0]}! This is a concept site by Formula, so no technician is coming, but this is exactly how your customers would book.`;
+    form.reset();
+  });
+})();
+</script>
+</body>
+</html>
