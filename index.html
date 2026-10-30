@@ -225,7 +225,8 @@ img,video{display:block;max-width:100%}
 .reel{display:grid;grid-template-columns:1.25fr 1fr 1.1fr;gap:clamp(16px,2vw,28px);align-items:start}
 .shot{margin:0;will-change:transform;min-width:0}
 .shot .f{border-radius:24px;overflow:hidden;border:2px solid var(--ink);background:#fff;transition:transform .6s var(--ease);box-shadow:12px 12px 0 var(--ink)}
-.shot:hover .f{transform:rotate(-2deg) translateY(-6px)}
+.shot:hover .f,.shot .go:focus-visible .f{transform:rotate(-2deg) translateY(-6px)}
+.shot .go{display:block;text-decoration:none;color:inherit;border-radius:24px}
 .shot img{width:100%;height:auto;aspect-ratio:16/10;object-fit:cover}
 .shot figcaption{margin-top:20px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 .shot figcaption b{font-family:var(--display);font-variation-settings:"wdth" 115,"wght" 760;font-size:1.2rem}
@@ -419,14 +420,14 @@ footer{background:var(--ink);color:var(--paper);border-radius:clamp(32px,5vw,64p
     <div class="wrap">
       <div class="head rv">
         <h2 id="work-title">Built to fit.</h2>
-        <p>One studio, many personalities. Each concept starts with the customer.</p>
+        <p>One studio, many personalities. Every site starts with the customer.</p>
       </div>
       <div class="reel">
-        <figure class="shot s1" data-depth="-0.05"><div class="f"><img src="work-d.webp" width="1200" height="750" loading="lazy" decoding="async" alt="Concept homepage for a fictional family dental practice with a soft green palette and a Book Online button."></div><figcaption><b>Juniper Row Dental</b><span>Healthcare</span></figcaption></figure>
-        <figure class="shot s2" data-depth="0.07"><div class="f"><img src="work-h.webp" width="1200" height="750" loading="lazy" decoding="async" alt="Concept homepage for a fictional heating and air company with a dark design, bold orange headline and a booking form."></div><figcaption><b>Ironpeak Heating &amp; Air</b><span>Home services</span></figcaption></figure>
-        <figure class="shot s3" data-depth="-0.02"><div class="f"><img src="work-l.webp" width="1200" height="750" loading="lazy" decoding="async" alt="Concept homepage for a fictional business law firm with an ivory and charcoal palette and a consultation button."></div><figcaption><b>Halloran &amp; Vest</b><span>Legal</span></figcaption></figure>
+        <figure class="shot s1" data-depth="-0.05"><a class="go" href="https://wraptik.com/" target="_blank" rel="noopener" aria-label="Visit Wraptik website (opens in a new tab)"><div class="f"><img src="work-wraptik.webp" width="1200" height="750" loading="lazy" decoding="async" alt="Wraptik homepage: dark premium design with a black sports car and the headline Wraptik, premium auto styling."></div><figcaption><b>Wraptik</b><span>Automotive · Live site ↗</span></figcaption></a></figure>
+        <figure class="shot s2" data-depth="0.07"><a class="go" href="work/hvac/" target="_blank" rel="noopener" aria-label="Open the Ironpeak Heating and Air demo site (opens in a new tab)"><div class="f"><img src="work-hvac.webp" width="1200" height="750" loading="lazy" decoding="async" alt="Ironpeak Heating and Air demo site: navy design, bold orange headline and a quick service request form."></div><figcaption><b>Ironpeak Heating &amp; Air</b><span>Home services · Demo ↗</span></figcaption></a></figure>
+        <figure class="shot s3" data-depth="-0.02"><a class="go" href="work/dental/" target="_blank" rel="noopener" aria-label="Open the Juniper Row Dental demo site (opens in a new tab)"><div class="f"><img src="work-dental.webp" width="1200" height="750" loading="lazy" decoding="async" alt="Juniper Row Dental demo site: soft sage design with a serif headline and a Book Online button."></div><figcaption><b>Juniper Row Dental</b><span>Healthcare · Demo ↗</span></figcaption></a></figure>
       </div>
-      <p class="note rv">Concept designs for fictional brands, made to show our range.</p>
+      <p class="note rv">Click any project to open it. Demo sites are concept builds for fictional businesses.</p>
     </div>
   </section>
 
