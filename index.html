@@ -496,7 +496,9 @@ footer{background:var(--ink);color:var(--paper);border-radius:clamp(32px,5vw,64p
   const video = document.getElementById('heroVideo'), vt = document.getElementById('vt');
   const setVT = paused => { vt.setAttribute('aria-pressed', String(paused)); vt.setAttribute('aria-label', paused ? 'Play background video' : 'Pause background video'); vt.querySelector('svg').innerHTML = paused ? '<path d="M7 4l13 8-13 8z"/>' : '<path d="M6 4h4v16H6zM14 4h4v16h-4z"/>'; };
   let userPaused = false;
-  const play = () => { video.muted = true; const p = video.play(); if (p && p.catch) p.catch(() => setVT(true)); };
+  const SPEED = 1.25; video.defaultPlaybackRate = SPEED; video.playbackRate = SPEED;
+  video.addEventListener("loadedmetadata", () => { video.playbackRate = SPEED; });
+  const play = () => { video.muted = true; video.playbackRate = SPEED; const p = video.play(); if (p && p.catch) p.catch(() => setVT(true)); };
   if (reduce.matches) { video.removeAttribute('autoplay'); video.pause(); setVT(true); } else play();
   vt.addEventListener('click', () => { if (video.paused) { userPaused = false; play(); setVT(false); } else { userPaused = true; video.pause(); setVT(true); } });
   if ('IntersectionObserver' in window) new IntersectionObserver(([e]) => { if (userPaused || reduce.matches) return; e.isIntersecting ? play() : video.pause(); }).observe(video);
